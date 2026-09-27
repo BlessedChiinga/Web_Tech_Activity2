@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+        <p>Welcome to my personal website</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a><br>
+        <a href="#hobbies">My Hobbies</a><br>
+        <a href="#learning">Learning Plan</a><br>
+        <a href="#photos">My Photos</a><br>
+        <a href="#media">My Media</a><br>
+        <a href="#contact">Contact</a><br>
+        <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a>
+    </nav>
+    <main>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Blessed Chiinga, studying
+                Information Technology. I am interested
+                in computers, programming and web development. I enjoy
+                learning how websites are created and how different
+                technologies work together. My goal is to improve my
+                programming skills and become a better ICT professional.
+                I am currently learning HTML, CSS and JavaScript so that
+                I can create useful and attractive websites. I believe
+                that practising regularly will help me improve my skills
+                and become more confident in web development. 
+            </p>
+        </section>
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Ballin'</li>
+                <li>Gaming</li>
+            </ul>
+        </section>
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <p>
+                These are some steps I will take to improve my web
+                development skills:
+            </p>
+            <ol>
+                <li>Learn and practise HTML regularly.</li>
+                <li>Learn CSS and practise creating page layouts.</li>
+                <li>Learn JavaScript and build interactive websites.</li>
+                <li>Build small projects to improve my practical skills.</li>
+            </ol>
+            <table>
+
+                <caption>
+                    My Weekly Web Learning Plan
+                </caption>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10:00 PM - 12:00 AM</td>
+                        <td>HTML</td>
+                        <td>Create and structure web pages</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>2:00 PM - 4:00 PM</td>
+                        <td>CSS</td>
+                        <td>Style a web page</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>JavaScript</td>
+                        <td>Create simple interactive features</td>
+                    </tr>
+            </table>
+        </section>
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg"
+                         alt="A photo representing my student life">
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg"
+                         alt="A photo related to my studies">
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg"
+                         alt="A photo representing my hobbies">
+                </figure>
+            </div>
+        </section>
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            <h3>My Introduction Video</h3>
+            <video controls>
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p>
+                In this video, I introduce myself, mention my programme
+                and explain one web development skill I hope to learn.
+            </p>
+            <h3>My Audio</h3>
+            <audio controls>
+                <source src="videos/Audio.m4a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p>My introduction audio clip, where I talk about my interests and hobbies.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacts</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+                <label for="topic">Topic:</label>
+                <input type="text"
+                       id="topic"
+                       name="topic">
+                <label for="message">Message:</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          required></textarea>
+                <button type="submit">
+                    Submit
+                </button>
+                <p>
+                This form is only a browser demonstration. It does not
+                send the data.
+            </p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 My Personal Website</p>
+    </footer>
+    <script> window.addEventListener("load", function() { document.getElementById("loader").style.display = "none"; }); </script>
+</body>
+</html>
