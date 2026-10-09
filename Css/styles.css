@@ -230,7 +230,7 @@ label {
 
 #message-preview[hidden],
 .project-details[hidden] {
-    display: none !important;
+    display: none;
 }
 
 .project-button {
@@ -251,6 +251,48 @@ img {
     height: auto;
     border-radius: 14px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #263449;
+    color: #cbd5e1;
+}
+
+tr {
+    background: #0f172a;
+    transition: 0.2s ease;
+}
+
+tr:nth-child(even) {
+    background: #131d2f;
+}
+
+tr:hover {
+    background: #1e293b;
+}
+
 
 #gallery-image {
     width: 100%;
@@ -315,6 +357,12 @@ footer a {
 
 #theme-button {
     background: var(--accent-hover);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
 }
 
 #back-to-top {
@@ -440,9 +488,9 @@ body.dark-theme footer {
     *,
     *::before,
     *::after {
-        scroll-behavior: auto !important;
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+        scroll-behavior: auto;
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
     }
 }
